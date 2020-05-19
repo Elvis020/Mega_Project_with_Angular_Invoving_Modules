@@ -1,0 +1,21 @@
+import { SharedModule } from './../shared/shared.module';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ViewssRoutingModule } from './viewss-routing.module';
+import { ViewsHomeComponent } from './views-home/views-home.component';
+
+import { StatisticsComponent } from './statistics/statistics.component';
+import { ItemListComponent } from './item-list/item-list.component';
+
+
+@NgModule({
+  declarations: [ViewsHomeComponent, StatisticsComponent, ItemListComponent],
+  imports: [
+    CommonModule,
+    ViewssRoutingModule,
+    SharedModule
+  ],
+  exports:[]
+})
+export class ViewssModule { }
